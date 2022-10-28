@@ -1,0 +1,14 @@
+
+num = (int)(input("Dime un número, pulsa el 0 para salir:\n"))
+sumaN = 0
+m = 0
+
+while num != 0:
+    sumaN = sumaN + num
+    m = m + 1
+    num = (int)(input("Dime otro número, pulsa 0 para salir:\n"))
+
+
+
+print("La suma de todos lo números es:", sumaN)
+print("La media de todos los números es:", sumaN/m)
