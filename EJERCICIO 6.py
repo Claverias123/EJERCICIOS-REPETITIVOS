@@ -8,7 +8,7 @@ num2=int(input("Dime otro numero\n"))
 
 print("Los numeros pares son:")
 
-for num in range(num1,num2):
+for num in range(num1,num2+1):
     if num%2==0:
         print(num)
    
