@@ -1,4 +1,3 @@
-
 num = (int)(input("Dime un número, pulsa el 0 para salir:\n"))
 sumaN = 0
 m = 0
