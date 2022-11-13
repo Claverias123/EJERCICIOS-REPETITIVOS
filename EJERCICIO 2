@@ -1,19 +1,19 @@
 import random
 
-numeroS = random.randint(1, 100)
-intent = 1
-numerointent = (int)(input("Dime un número:\n"))
+numero=random.randint(1,100)
+num = 0
+fallos = 0
 
-while numerointent != numeroS and intent<10:
-    if numerointent<numeroS:
-        print("El número secreto es mayor")
+while (numero!=num and fallos<10):
+    fallos += 1
+    num = int(input("Dime un número: \n"))
+    if (numero<num):
+        print("El número es menor")
     else:
-        print("El número secreto es menor")
-    intent += 1
-    print("Llevas:", intent, "intentos")
-    numerointent = (int)(input("Dime otro número:\n"))
+        print("El número es mayor")
 
-if numerointent == numeroS:
-    print("Lo has adivinado en:", intent, "intentos")
+
+if (fallos==10):
+    print (f"Has llegado al límite de intentos. El número era {numero}")
 else:
-    print("Has perdido")
+    print (f"Ya lo has adivinado. Lo has acertado despues de {fallos} fallos ")
