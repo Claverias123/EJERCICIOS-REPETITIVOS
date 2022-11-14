@@ -4,10 +4,10 @@ trs=0
 s=0
 ttl=0
 
-h=(int)(input("¿Cuántas horas trabajas al día?"))
-d=(int)(input("¿Cuántos días trabajas?"))
-trs=(int)(input("¿Cuántos trabajadores hay en la empresa?"))
-s=(int)(input("¿Cuanto se cobra por hora?"))
+h=(int)(input("¿Cuántas horas trabajas al día?\n"))
+d=(int)(input("¿Cuántos días trabajas?\n"))
+trs=(int)(input("¿Cuántos trabajadores hay en la empresa?\n"))
+s=(int)(input("¿Cuanto se cobra por hora?\n"))
 
 for i in range(0,d):
     ttl=ttl+(h*s)

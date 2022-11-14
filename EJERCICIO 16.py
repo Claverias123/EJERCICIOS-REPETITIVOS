@@ -6,14 +6,14 @@ contTrabajadores=1
 num=0
 
 
-trabajadores=int(input("Dime cuantos trabajadores hay:"))
-sueldo=int(input("Dime cuanto cobra por hora:"))
+trabajadores=int(input("Dime cuantos trabajadores hay:\n"))
+sueldo=int(input("Dime cuanto cobra por hora:\n"))
 
 for i in range(trabajadores):    
-    num=int(input(f"Dime cuantas horas ha trabajado en esta semana el trabajador {contador_trabajador}:"))
+    num=int(input(f"Dime cuantas horas ha trabajado en esta semana el trabajador {contTrabajadores}:"))
     contTrabajadores=contTrabajadores+1
     ttl=sueldo*num
-    ttlP+=total
-    print(f"El sueldo semanal del trabajador {contador_trabajador} es de: {total}")
+    ttlP+=ttl
+    print(f"El sueldo semanal del trabajador {contTrabajadores} es de: {ttl}")
 
 print("El sueldo semanal total es de:",ttlP,"€")
